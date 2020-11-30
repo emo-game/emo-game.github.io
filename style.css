@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'hochelaga_regularregular';
+    src: url('fonts/hochelaga-regular.woff2') format('woff2'),
+         url('fonts/hochelaga-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'hochelaga_regularregular';
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #febcfe ;
+
+}
+
+canvas{
+    position: fixed;    
+}
+
+.game { 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #febcfe ;
+    outline:solid 130px #fff;
+    outline-offset:-130px;
+}
+
+.game video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes maskAppears {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.bandeau{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+.bandeau img{
+    width: 100%;
+}
+
+
+.mask { 
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+
+    transition: transform 2s ease;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+}
+
+.mask img{
+    width: 100%;
+}
+
+.mask.isGreat {
+    opacity: 0.1;
+    transform: rotate(10turn);
+    transition: transform 10s linear;
+}
+
+.mask.isNotBad {
+    opacity: 0.6;
+}
+
+.score {
+    display: block;
+    position: fixed;
+    width: fit-content;
+    color: #febcfe;
+    transform-origin: center center;
+    font-size: 80px;
+    left: 96%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+ 
+}
+
+
+
+
+body.great {
+    background: yellow;
+}
+
+body.notBad {
+    background: red;
+}
+
+
+.textGreat {
+    display: none;
+    position: fixed;
+    color: white;
+    font-size: 100px;
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.textNotBad {
+    display: none;
+    position: fixed;
+    color: white;
+    font-size: 100px;
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+body.notBad .textNotBad {
+    display: block;
+}
+
+
+body.great .textGreat {
+    display: block;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>EMO</title>
+    <link rel="stylesheet" href="style-score.css" /> 
+    <!-- <script src="scriptStart.js"  charset="utf-8"></script> -->
+</head>
+
+
+
+
+    <body>
+        <div class="header">
+            <div class="points">TON SCORE : <span class='score-value'>??</span></div>
+        </div>
+
+        
+
+    </body>
+
+    <script>
+        const score = +window.location.href.match(/\?score=([0-9]+)/)[1]
+        document.querySelector('.score-value').textContent = score
+    </script>
+    
+</html>

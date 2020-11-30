@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'hochelaga_regularregular';
+    src: url('fonts/hochelaga-regular.woff2') format('woff2'),
+         url('fonts/hochelaga-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+body {
+    display: block;
+    font-family: 'hochelaga_regularregular';
+    background-color: #febcfe;
+    }
+
+h1 {
+    color: white;
+    display: block;
+    font-display: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+        
+    }
+
+.startButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 10vw;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: #febcfe; 
+    padding: 30px;
+ }
+
+ .ecran{
+     width: 50vw;
+     height: 50vh;
+     background-color: white;
+     margin: 0 auto;
+ }
+
+ 
+
+
