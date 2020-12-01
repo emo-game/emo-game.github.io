@@ -240,7 +240,7 @@ Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
   faceapi.nets.faceExpressionNet.loadFromUri('/models'),
 ]).then(() => {
-  navigator.mediaDevices.getUserMedia({
+  navigator.getUserMedia({
      video: {} 
     }, 
     stream => {
