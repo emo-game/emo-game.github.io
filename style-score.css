@@ -7,6 +7,10 @@
 
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .header {
     display: block;
     margin: 0 auto;
@@ -26,7 +30,7 @@ h1 {
     color: white;
     display: block;
     font-display: bold;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 50px;
     text-align: center;      
     }
@@ -35,7 +39,131 @@ h1 {
     color: white;
     display: block;
     transform-origin: center center;
-    transform: rotate(-10deg);
-    margin-top: 2%;
+    transform: rotate(-5deg);
+    margin-top: 5%;
     font-size: 80px;
 }
+
+.fiche0{    
+
+    background-image: url("img/fiche0-10.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche10{    
+
+    background-image: url("img/fiche10-20.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche20{    
+
+    background-image: url("img/fiche20-30.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche30{    
+
+    background-image: url("img/fiche30-40.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche40{    
+
+    background-image: url("img/fiche40-50.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche50{    
+
+    background-image: url("img/fiche50-60.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche60{    
+
+    background-image: url("img/fiche60-70.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche70{    
+
+    background-image: url("img/fiche70-80.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche80{    
+
+    background-image: url("img/fiche80-90.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.fiche90{    
+
+    background-image: url("img/fiche90-100.png");
+    background-size: 70%;
+    background-position: top 300px center;
+    background-repeat: no-repeat;
+   
+}
+
+.container{
+    width: 700px;
+    height: 20px;
+    margin-top: 42%;
+    margin-left: 70%;
+}
+
+
+.replayButton {
+    display: inline-block;
+    width: 10vw;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: #febcfe; 
+    padding: 30px;
+ }
+
+ .maskButton {
+    display: inline-block;
+    margin-right: 30px;
+    width: 15vw;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: #febcfe; 
+    padding: 30px;
+ }
+
