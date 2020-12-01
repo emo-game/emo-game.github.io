@@ -128,7 +128,7 @@ document.addEventListener('click', () => nextMask()) // DEBUG
 function update () {
   document.body.classList.remove('great')
   document.body.classList.remove('notBad')
-  document.body.classList.remove('score-value')
+  // document.body.classList.remove('score-value')
 
   if (CURRENT_MASK && window.CURRENT_EXPRESSIONS.active) {
     // console.log('update !')
@@ -265,14 +265,10 @@ video.addEventListener('play',()=> {
       new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks()
       .withFaceExpressions()
       if (detections.length === 1) {
-        // const resizedDetections = faceapi.resizeResults(detections,displaySize)
-        // canvas.getContext('2d').clearRect(0 ,0 , canvas.width, canvas.height)
-        // faceapi.draw.drawDetections(canvas,resizedDetections)
-        // faceapi.draw.drawFaceLandmarks(canvas,resizedDetections)
-        // faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+        
         window.CURRENT_EXPRESSIONS = detections[0].expressions
         window.CURRENT_EXPRESSIONS.active = true
-        // console.log(CURRENT_EXPRESSIONS)
+        
       } else {
         window.CURRENT_EXPRESSIONS = { active: false }
       }
