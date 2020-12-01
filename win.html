@@ -15,13 +15,75 @@
             <div class="points">TON SCORE : <span class='score-value'>??</span></div>
         </div>
 
-        
+        <div id="fiche0"></div>
+        <div id="fiche10"></div>
+        <div id="fiche20"></div>
+        <div id="fiche30"></div>
+        <div id="fiche40"></div>
+        <div id="fiche50"></div>
+        <div id="fiche60"></div>
+        <div id="fiche70"></div>
+        <div id="fiche80"></div>
+        <div id="fiche90"></div>
+    <div class="container">
+    
+        <a href="game.html" class="maskButton">VOIR PLUS DE MASQUES</a>
+        <a href="game.html" class="replayButton">REJOUER</a>
+    </div>
+    </div>
 
     </body>
 
     <script>
         const score = +window.location.href.match(/\?score=([0-9]+)/)[1]
         document.querySelector('.score-value').textContent = score
+
+        
+
+        
+        if (score <= 10 && score >= 0) {
+            document.body.classList.add('fiche0')
+        }
+
+        if (score <= 20 && score >= 11) {
+            document.body.classList.add('fiche10')
+        }
+
+        if (score <= 30 && score >= 21) {
+            document.body.classList.add('fiche20')
+        }
+         
+        if (score <= 40 && score >= 31) {
+            document.body.classList.add('fiche30')
+        }
+
+        if (score <= 50 && score >= 41) {
+            document.body.classList.add('fiche40')
+        }
+
+        if (score <= 60 && score >= 51) {
+            document.body.classList.add('fiche50')
+        }
+
+        if (score <= 70 && score >= 61) {
+            document.body.classList.add('fiche60')
+        }
+
+        if (score <= 80 && score >= 71) {
+            document.body.classList.add('fiche70')
+        }
+
+        if (score <= 90 && score >= 81) {
+            document.body.classList.add('fiche80')
+        }
+
+        if (score >= 91) {
+            document.body.classList.add('fiche90')
+        }
+         
+            
+
+
     </script>
     
 </html>
