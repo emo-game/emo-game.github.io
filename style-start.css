@@ -26,8 +26,8 @@ h1 {
     color: white;
     display: block;
     font-display: bold;
-    font-size: 48px;
-    margin-top: 50px;
+    font-size: 54px;
+    margin-top: 500px;
     margin-bottom: 80px;
     text-align: center;
         
@@ -37,12 +37,12 @@ h1 {
     display: block;
     margin: 0 auto;
     margin-top: 80px;
-    width: 20vw;
+    width: 40vw;
     border: none;
     background-color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 34px;
+    font-size: 40px;
     color: #febcfe; 
     padding: 30px;
  }
