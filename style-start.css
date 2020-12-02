@@ -26,8 +26,9 @@ h1 {
     color: white;
     display: block;
     font-display: bold;
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 80px;
     text-align: center;
         
     }
@@ -35,13 +36,13 @@ h1 {
 .startButton {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-    width: 10vw;
+    margin-top: 80px;
+    width: 20vw;
     border: none;
     background-color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 26px;
+    font-size: 34px;
     color: #febcfe; 
     padding: 30px;
  }
