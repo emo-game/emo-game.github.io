@@ -10,7 +10,7 @@
 .header {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -27,8 +27,8 @@ h1 {
     display: block;
     font-display: bold;
     font-size: 64px;
-    margin-top: 400px;
-    margin-bottom: 100px;
+    margin-top: 200vh;
+    margin-bottom: 50vh;
     text-align: center;
         
     }
@@ -36,7 +36,7 @@ h1 {
 .startButton {
     display: block;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 40vh;
     width: 35vw;
     border: none;
     background-color: white;
