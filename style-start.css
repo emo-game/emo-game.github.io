@@ -27,7 +27,7 @@ h1 {
     display: block;
     font-display: bold;
     font-size: 64px;
-    margin-top: 20vh;
+    margin-top: 2vh;
     margin-bottom: 5vh;
     text-align: center;
         
@@ -36,7 +36,7 @@ h1 {
 .startButton {
     display: block;
     margin: 0 auto;
-    margin-top: 40vh;
+    margin-top: 4vh;
     width: 35vw;
     border: none;
     background-color: white;
@@ -47,12 +47,7 @@ h1 {
     padding: 30px;
  }
 
- .ecran{
-     width: 50vw;
-     height: 50vh;
-     background-color: white;
-     margin: 0 auto;
- }
+
 
  
 
