@@ -5,22 +5,9 @@ const EMOTIONS_BY_MASK = {
   '01-angry.png' : 'angry',
   '01-fearful.png' : 'fearful',
   '01-sad.png' : 'sad',
-
-  '02-happy.png': 'happy',
-  '02-neutre.png': 'neutral',
-  '02-angry.png' : 'angry',
-  '02-fearful.png' : 'fearful',
-  '02-sad.png' : 'sad',
-
-  '03-happy.png': 'happy',
-  '03-neutre.png': 'neutral',
-  '03-angry.png' : 'angry',
-  '03-fearful.png' : 'fearful',
-  '03-sad.png' : 'sad',
 }
 
 let CURRENT_MASK = null
-let CURRENT_BANDEAU = null
 let SCORE = 0
 let TIMELINE_INDEX = 0 
 
@@ -37,89 +24,39 @@ const TIMELINE = [
   { maskSrc: '01-sad.png', duration: 5000 },
   { maskSrc: '01-fearful.png', duration: 5000 },
 
-  { maskSrc: '03-neutre.png', duration: 3000 },
+  { maskSrc: '01-neutre.png', duration: 3000 },
   { maskSrc: '01-angry.png', duration: 2000 },
   { maskSrc: '01-sad.png', duration: 3000 },
 
-  { maskSrc: '02-angry.png', duration: 3000 },
-  { maskSrc: '02-sad.png', duration: 2000 },
-  { maskSrc: '02-fearful.png', duration: 2000 },
-  { maskSrc: '03-angry.png', duration: 3000 },
-  { maskSrc: '03-sad.png', duration: 2000 },
+  { maskSrc: '01-angry.png', duration: 3000 },
+  { maskSrc: '01-sad.png', duration: 2000 },
+  { maskSrc: '01-fearful.png', duration: 2000 },
+  { maskSrc: '01-angry.png', duration: 3000 },
+  { maskSrc: '01-sad.png', duration: 2000 },
 
   { maskSrc: '01-angry.png', duration: 1000 },
   { maskSrc: '01-sad.png', duration: 1000 },
 
-  { maskSrc: '02-fearful.png', duration: 1000 },
-  { maskSrc: '03-sad.png', duration: 500 },
+  { maskSrc: '01-fearful.png', duration: 1000 },
+  { maskSrc: '01-sad.png', duration: 500 },
   { maskSrc: '01-neutre.png',  duration: 500 },
-  { maskSrc: '02-happy.png', duration: 1000 },
+  { maskSrc: '01-happy.png', duration: 1000 },
   { maskSrc: '01-angry.png', duration: 500 },
-  { maskSrc: '03-sad.png', duration: 500 },
-  { maskSrc: '03-fearful.png', duration: 500 },
-  { maskSrc: '02-fearful.png', duration: 500 },
-  { maskSrc: '03-happy.png', duration: 500 },
-  { maskSrc: '02-neutre.png', duration: 500 },
-  { maskSrc: '03-angry.png', duration: 500 },
-  { maskSrc: '02-angry.png', duration: 500 },
+  { maskSrc: '01-sad.png', duration: 500 },
+  { maskSrc: '01-fearful.png', duration: 500 },
+  { maskSrc: '01-fearful.png', duration: 500 },
+  { maskSrc: '01-happy.png', duration: 500 },
+  { maskSrc: '01-neutre.png', duration: 500 },
+  { maskSrc: '01-angry.png', duration: 500 },
+  { maskSrc: '01-happy.png', duration: 1500 },
   { maskSrc: '01-fearful.png', duration: 500 },
   { maskSrc: '01-sad.png', duration: 500 },
 
-  { maskSrc: '02-happy.png', duration: 2000 },
-  { maskSrc: '02-sad.png', duration: 2000 },
-  { maskSrc: '03-sad.png', duration: 2000 },
-  { maskSrc: '02-neutre.png', duration: 2000 },
-  { maskSrc: '03-fearful.png', duration: 2000 },
-
-]
-
-const TIMELINE_BANDEAU = [
-  { duration : 4000},
-  { duration : 800},
-  { duration : 800},
-  { duration : 800},
-  { duration : 800},
-  { duration : 1000},
-
-  { bandeauSrc: 'heureux.png', duration: 5000 }, 
-  { bandeauSrc: 'neutre.png', duration: 5000 },
-  { bandeauSrc: 'colerique.png', duration: 5000 },
-  { bandeauSrc: 'triste.png', duration: 5000 },
-  { bandeauSrc: 'effraye.png', duration: 5000 },
-
-  { bandeauSrc: 'neutre.png', duration: 3000 },
-  { bandeauSrc: 'colerique.png', duration: 2000 },
-  { bandeauSrc: 'triste.png', duration: 3000 },
-
-  { bandeauSrc: 'colerique.png', duration: 3000 },
-  { bandeauSrc: 'triste.png', duration: 2000 },
-  { bandeauSrc: 'effraye.png', duration: 2000 },
-  { bandeauSrc: 'colerique.png', duration: 3000 },
-  { bandeauSrc: 'triste.png', duration: 2000 },
-
-  { bandeauSrc: 'colerique.png', duration: 1000 },
-  { bandeauSrc: 'triste.png', duration: 1000 },
-
-  { bandeauSrc: 'effraye.png', duration: 1000 },
-  { bandeauSrc: 'triste.png', duration: 500 },
-  { bandeauSrc: 'neutre.png',  duration: 500 },
-  { bandeauSrc: 'heureux.png', duration: 1000 },
-  { bandeauSrc: 'colerique.png', duration: 500 },
-  { bandeauSrc: 'triste.png', duration: 500 },
-  { bandeauSrc: 'effraye.png', duration: 500 },
-  { bandeauSrc: 'effraye.png', duration: 500 },
-  { bandeauSrc: 'heureux.png', duration: 500 },
-  { bandeauSrc: 'neutre.png', duration: 500 },
-  { bandeauSrc: 'colerique.png', duration: 500 },
-  { bandeauSrc: 'colerique.png', duration: 500 },
-  { bandeauSrc: 'effraye.png', duration: 500 },
-  { bandeauSrc: 'triste.png', duration: 500 },
-
-  { bandeauSrc: 'heureux.png', duration: 2000 },
-  { bandeauSrc: 'triste.png', duration: 2000 },
-  { bandeauSrc: 'triste.png', duration: 2000 },
-  { bandeauSrc: 'neutre.png', duration: 2000 },
-  { bandeauSrc: 'effraye.png', duration: 2000 },
+  { maskSrc: '01-happy.png', duration: 500 },
+  { maskSrc: '01-sad.png', duration: 2000 },
+  { maskSrc: '01-sad.png', duration: 2000 },
+  { maskSrc: '01-neutre.png', duration: 2000 },
+  { maskSrc: '01-fearful.png', duration: 2000 },
 
 ]
 
@@ -144,10 +81,24 @@ function update () {
       console.log("notBad")
       console.log(SCORE)
     }
+      
+
+//       if (emotion <= 0.89) { 
+//         let tableauMini = document.querySelectorAll(".minismiley");
+//         if (tableauMini) {
+
+//         tableauMini.forEach( (smiley) => {
+//         let gameDiv = document.querySelector(".game");
+//         gameDiv.removeChild(smiley);
+//   })
+// }
+//       } 
+
+ 
 
     if (emotion > 0.90) { 
       document.body.classList.add('great')
-
+    
       // TODO: implémenter un système de point
       // score += un certain de nombre de points
   
@@ -155,7 +106,31 @@ function update () {
       SCORE += 5
       CURRENT_MASK.classList.add('isGreat')
 
-    
+      // emotion : 'angry', 'fearful', 'happy', 'sad', 'neutral'
+      //     let nb = 20;
+
+      //     for (let i = 0; i < nb ; i++){
+            
+      //       let taille = Math.round(Math.random() * 100);
+      //       var posX = Math.random() * 300;
+      //       var posY = Math.random() * 300;
+      //       let smiley = document.createElement("img");
+      //       smiley.src = "img/01-angry.png";
+      //       smiley.classList = "minismiley"
+
+      //       smiley.height = taille;
+      //       smiley.width = taille;
+      //       smiley.style.top = posY + 200;
+      //       smiley.style.left = posX + 200;           
+            
+
+
+      //     let gameDiv = document.querySelector('.game');
+      //     gameDiv.appendChild(smiley);
+
+        
+      // };
+
 
       console.log("great")
       console.log(SCORE)
@@ -193,19 +168,10 @@ function nextMask () {
     },
     complete: function () {
       nextMask()
-      nextBandeau()
     }
   })
 }
 
-  function nextBandeau () {
-    if (CURRENT_BANDEAU) {
-      CURRENT_BANDEAU.remove()
-    }
-
-    const currentFrameB = TIMELINE_BANDEAU[TIMELINE_INDEX]
-    CURRENT_BANDEAU = createBandeau(currentFrameB.bandeauSrc)
-  }  
 
 
 // Insère un element masque dans le html
@@ -219,16 +185,7 @@ function createMask (src) {
   return maskDiv
   }
 
-  // Insère un element bandeau dans le html
-function createBandeau(src) {
-  const bandeauDiv = document.createElement('div')
-  bandeauDiv.classList.add('bandeau')
-  bandeauDiv.style.backgroundImage = 'url(img/'+ src +')'
-  bandeauDiv.src = src
-  const game = document.querySelector('.game')
-  game.appendChild(bandeauDiv)
-  return bandeauDiv
-  }
+
 
   
 
@@ -250,7 +207,6 @@ Promise.all([
   )
 
   nextMask()
-  nextBandeau()
 })
 
 

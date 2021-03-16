@@ -10,7 +10,7 @@
 .header {
     display: block;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,29 +26,54 @@ h1 {
     color: white;
     display: block;
     font-display: bold;
-    font-size: 64px;
-    margin-top: 20%;
-    margin-bottom: 5%;
-    text-align: center;
-        
+    font-size: 8vw;
+    margin-top: 12vh;
+    margin-bottom: 2vh;
+    text-align: center;   
     }
+
+    h2 {
+        color: white;
+        display: block;
+        font-display: bold;
+        font-size: 2vw;
+        margin-bottom: 6vh;
+        text-align: center;   
+        }
 
 .startButton {
     display: block;
     margin: 0 auto;
-    margin-top: 5%;
-    width: 35vw;
+    margin-top: 6vh;
+    width: 22vw;
     border: none;
     background-color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 4vw;
     color: #febcfe; 
     padding: 30px;
  }
 
+ 
 
+#animation{
+     width: 224.9px;
+     height: 190px;
+     margin : 0 auto;
+     margin-bottom: 2vh;
+     background: url('../img/sprite-smiley.png') left center;
+     background-size: cover;
+     animation: play 1.5s steps(5) infinite;
+     display: inline-block;
 
+ }
+
+ @keyframes play {
+     100% { background-position: -2249px; }
+ }
+
+ 
  
 
 

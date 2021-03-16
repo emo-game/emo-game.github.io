@@ -40,11 +40,11 @@ h1 {
     display: block;
     transform-origin: center center;
     transform: rotate(-5deg);
-    margin-top: 5%;
+    margin-top: 20%;
     font-size: 80px;
 }
 
-.fiche0{    
+/* .fiche0{    
 
     background-image: url("img/fiche0-10.png");
     background-size: 70%;
@@ -132,7 +132,7 @@ h1 {
     background-position: top 300px center;
     background-repeat: no-repeat;
    
-}
+} */
 
 .container{
     width: 700px;
