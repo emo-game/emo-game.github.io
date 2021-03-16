@@ -44,107 +44,11 @@ h1 {
     font-size: 80px;
 }
 
-/* .fiche0{    
-
-    background-image: url("img/fiche0-10.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche10{    
-
-    background-image: url("img/fiche10-20.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche20{    
-
-    background-image: url("img/fiche20-30.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche30{    
-
-    background-image: url("img/fiche30-40.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche40{    
-
-    background-image: url("img/fiche40-50.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche50{    
-
-    background-image: url("img/fiche50-60.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche60{    
-
-    background-image: url("img/fiche60-70.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche70{    
-
-    background-image: url("img/fiche70-80.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche80{    
-
-    background-image: url("img/fiche80-90.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-}
-
-.fiche90{    
-
-    background-image: url("img/fiche90-100.png");
-    background-size: 70%;
-    background-position: top 300px center;
-    background-repeat: no-repeat;
-   
-} */
-
-.container{
-    width: 700px;
-    height: 20px;
-    margin-top: 42%;
-    margin-left: 70%;
-}
 
 
 .replayButton {
     display: inline-block;
-    width: 10vw;
+    width: 20vw;
     border: none;
     background-color: white;
     text-decoration: none;
